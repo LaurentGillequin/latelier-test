@@ -1,0 +1,28 @@
+/* SERVICES */
+.services {min-width: 70% !important;}
+.serviceID, .serviceTitle {
+    display: inline-block;
+    font-family: 'futuramedium', serif;
+    font-size: 50px;
+}
+.serviceTitle {font-size: 16px;}
+
+/* SEARCH FORM */
+.autoComplete_wrapper, .autoComplete_wrapper>input {width: 100%;}
+.autoComplete_wrapper>input {
+    margin-top: 5%;
+    color: #000 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background-image: url('../img/loupe.png') !important;
+}
+.autoComplete_wrapper > input::placeholder,
+.autoComplete_wrapper > input:hover::placeholder,
+.autoComplete_wrapper > input:focus::placeholder {color: #000;}
+
+/* PARTNERS */
+.partners-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}

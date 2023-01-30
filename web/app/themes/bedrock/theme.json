@@ -1,0 +1,175 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#000000",
+					"name": "Primary"
+				},
+				{
+					"slug": "white",
+					"color": "#ffffff",
+					"name": "White"
+				}
+			],
+			"custom": false,
+			"customGradient": false,
+			"defaultPalette": false,
+			"defaultGradients": false
+		},
+		"custom": {
+			"typography": {
+				"font-size": {
+					"small": "clamp(10px, .75rem, 13px)",
+					"typo": "clamp(12px, 1rem, 17px)",
+					"abovetitle": "clamp(16px, 1.267rem, 25px)",
+					"title": "clamp(30px, 2.667rem, 45px)",
+					"subtitle": "clamp(25px, 1.8rem, 35px)"
+				},
+				"line-height": {
+					"tiny": 1.15,
+					"small": 1.2,
+					"medium": 1.4,
+					"normal": 1.6
+				}
+			}
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"units": ["px", "%", "rem", "vw", "vh"]
+		},
+		"typography": {
+			"dropCap": false,
+			"fontFamilies": [
+				{
+					"fontFamily": "\"futuramedium\", serif",
+					"name": "Futura Medium",
+					"slug": "futuramedium",
+                    "fontFace": [
+						{
+							"fontFamily": "futuramedium",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/futura/futura_medium_bt-webfont.woff2"
+                            ]
+						}
+                    ]
+				}
+			],
+			"fontSizes": [
+				{
+					"size": ".75rem",
+					"slug": "small"
+				},
+				{
+					"size": "1rem",
+					"slug": "typo"
+				},
+				{
+					"size": "1.267rem",
+					"slug": "abovetitle"
+				},
+				{
+					"size": "1.8rem",
+					"slug": "subtitle"
+				},
+				{
+					"size": "2.667rem",
+					"slug": "titre"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "650px",
+			"wideSize": "1000px"
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/group": {
+				"spacing": {
+					"margin": {
+						"top": "50px",
+						"bottom": "50px"
+					}
+				}
+			},
+			"core/button": {
+				"color": {
+					"background": "var(--wp--preset--color--primary)",
+					"text": "var(--wp--preset--color--blanc)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--futuramedium)",
+					"fontSize": "var(--wp--preset--font-size--typo)"
+				}
+			},
+			"core/post-title": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--futuramedium)",
+					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
+					"fontSize": "var(--wp--custom--typography--font-size--titre)"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--white)"
+				}
+			},
+			"core/heading": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				}
+			},
+			"core/paragraph": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--futuramedium)",
+					"fontSize": "var(--wp--preset--font-size--typo)",
+					"lineHeight": "var(--wp--custom--typography--line-height--normal)"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				}
+			}
+		},
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--futuramedium)",
+					"fontSize": "var(--wp--custom--typography--font-size--titre)",
+					"lineHeight": "var(--wp--custom--typography--line-height--tiny)"
+				},
+                "color": {
+					"text": "var(--wp--preset--color--white)"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--futuramedium)",
+					"fontSize": "var(--wp--custom--typography--font-size--subtitle)",
+					"lineHeight": "var(--wp--custom--typography--line-height--small)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				"typography": {
+					"textDecoration": false,
+					"fontFamily": "var(--wp--preset--font-family--futuramedium)"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "1.5rem"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--futuramedium)",
+			"fontSize": "var(--wp--preset--font-size--typo)",
+			"lineHeight": "var(--wp--custom--typography--line-height--normal)"
+		}
+	}
+}
